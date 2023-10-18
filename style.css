@@ -143,7 +143,7 @@ p {
   color: var(--third-color);
   border-radius: 20px;
   padding: 1% 5%;
-  background-color: var(--yellow-color);
+  background-color: var(--first-color);
 }
 
 /* Bandeau promotion */
@@ -186,9 +186,9 @@ p {
 /* Notre selection */
 
 .ContainerSelection {
-  height: 160vh;
   width: 90vw;
   margin-left: 5vw;
+  padding-bottom: 1vh;
 }
 
 .ContainerSelection h2 {
@@ -196,9 +196,8 @@ p {
 }
 
 .ComponentArticle {
-  height: 60vh;
-  width: 28vw;
   border-radius: 20px;
+  flex: 0 0 auto;
 }
 
 .ComponentArticle img {
@@ -210,14 +209,16 @@ p {
 
 .ContainerArticles {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   color: var(--third-color);
   font-family: var(--First-font);
   white-space: nowrap;
+  overflow: auto;
+  height: 65vh;
 }
 
 /* Prize name and more */
-.GridInfoAticle {
+.FlexInfoActicle {
   display: flex;
   align-items: center;
   margin-top: 2%;
@@ -225,18 +226,18 @@ p {
   justify-content: space-around;
 }
 
-.GridInfoAticle a {
+.FlexInfoActicle a {
   padding: 25%;
   border-radius: 20px;
   color: var(--first-color);
   background-color: var(--third-color);
 }
 
-.GridInfoAticle p {
+.FlexInfoActicle p {
   margin-top: 0;
 }
 
-.GridInfoAticle h3 {
+.FlexInfoActicle h3 {
   margin-bottom: 0;
   margin-top: 1rem;
   font-size: 2rem;
@@ -252,15 +253,15 @@ p {
 }
 
 .ArticleThree {
-  background-color: #c1c5c6;
+  background-color: #4D5456;
 }
 
 .ArticleFour {
-  background-color: #bac3a4;
+  background-color: #3E4D33;
 }
 
 .Articlefive {
-  background-color: #ae9c7a;
+  background-color: #605039;
 }
 
 .ArticleSix {
@@ -269,10 +270,8 @@ p {
 
 /* T-shirt */
 .ComponentArticleT {
-  height: 60vh;
-  width: 18vw;
   border-radius: 20px;
-  margin-top: 5%;
+  flex: 0 0 auto;
 }
 
 .ComponentArticleT img {
@@ -411,10 +410,31 @@ footer a:not(.TitleCa) {
   }
 
   .ContainerArticles {
-    height: 65vh;
+    justify-content: normal;
+    height: 74vh;
+    max-width: 100%;
   }
-  .ComponentArticle {
-    height: 65vh;
+
+  /* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  .ContainerArticles {
+    scrollbar-width: auto;
+    scrollbar-color: #8f54a0 #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  .ContainerArticles::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .ContainerArticles::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  .ContainerArticles::-webkit-scrollbar-thumb {
+    background-color: #8f54a0;
+    border-radius: 10px;
+    border: 14px solid #ffffff;
   }
 
   nav {
@@ -429,7 +449,13 @@ footer a:not(.TitleCa) {
   footer {
     height: 100vh;
   }
+  .ComponentArticle{
+    margin-right: 2vw;
+  }
 
+  .ComponentArticleT{
+    margin-right: 2vw;
+  }
 }
 
 @media (max-width: 1130px) {
