@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta
+            name="description"
+            content="Author: M. Manoah,
+    For: E-Commmerce, To: an Projet for Supinfo"
+    />
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" type="image/png" href="./img/logo.png" />
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    />
+    <title>Nice - Contact</title>
+</head>
+<body>
+
+<header>
+    <main>
+
+        <!-- le logo en haut à gauche -->
+        <div class="ContainerNav">
+            <div>
+                <h3>N<span class="hiddenTitle">ice</span><span>.</span></h3>
+            </div>
+
+            <!-- La navigation -->
+            <nav>
+
+
+                <ul>
+
+                    <li class="BugerMenuD">
+                        <a href="">Catégories</a>
+                    </li>
+                    <li class="BugerMenuD">
+                        <a href="">Hommes</a>
+                    </li>
+                    <li class="BugerMenuD">
+                        <a href="">Femmes</a>
+                    </li>
+                    <li class="BugerMenuD">
+                        <a href="">Nouveautés</a>
+                    </li>
+                    <li class="BugerMenuD">
+                        <a aria-label="Go to basket" href="">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </a>
+                    </li>
+                    <li class="burgerMenuPhone">
+                        <a href="./NavPhone.html">
+                            <div class="BarOneMenuPhone"></div>
+                            <div class="BarTwoMenuPhone"></div>
+                            <div class="BarThreeMenuPhone"></div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </main>
+</header>
+
+<section>
+    <div class="ContainerContact">
+        <div class="ContainerImgC">
+            <div class="ContainerForm">
+                <h1>
+                    Contact
+                </h1>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input
+                            type="hidden"
+                            name="access_key"
+                            value="823d8dc5-1bc1-4078-a311-54bc0150b90d"
+                    />
+                    <div>
+                        <label for="name"></label>
+                        <input id="name" type="text" name="name" placeholder="nom" required />
+                    </div>
+                    <div>
+                        <label for="first_name"></label>
+                        <input id="first_name" type="email" name="email" placeholder="email" required />
+                    </div>
+                    <div>
+                        <label for="message">
+                            <textarea id="message" name="message" required></textarea>
+                        </label>
+                    </div>
+
+                    <div class="ContainerButton">
+                        <button type="submit">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+            <div>
+                <img src="./img/pexels-lil-artsy-5541019.jpg" alt="Des Mains">
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+
+<script
+        src="https://web3forms.com/client/script.js"
+        async
+        defer
+></script>
+</html>
