@@ -8,6 +8,11 @@ body {
   --First-font: "Roboto", sans-serif;
 }
 
+object{
+  width:100%;
+  height: 100%;
+}
+
 main {
   height: 6vh;
   padding-bottom: 1%;
@@ -357,6 +362,10 @@ footer a:not(.TitleCa) {
   align-content: center;
 }
 
+.ComponentArticleT{
+    width: 20vw;
+}
+
 /* Media Query */
 
 @media (max-width: 768px) {
@@ -415,27 +424,6 @@ footer a:not(.TitleCa) {
     max-width: 100%;
   }
 
-  /* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  .ContainerArticles {
-    scrollbar-width: auto;
-    scrollbar-color: #8f54a0 #ffffff;
-  }
-
-  /* Chrome, Edge, and Safari */
-  .ContainerArticles::-webkit-scrollbar {
-    width: 0;
-  }
-
-  .ContainerArticles::-webkit-scrollbar-track {
-    background: #ffffff;
-  }
-
-  .ContainerArticles::-webkit-scrollbar-thumb {
-    background-color: #8f54a0;
-    border-radius: 10px;
-    border: 14px solid #ffffff;
-  }
 
   nav {
     padding-right: 15%;
@@ -455,7 +443,9 @@ footer a:not(.TitleCa) {
 
   .ComponentArticleT{
     margin-right: 2vw;
+      width: fit-content;
   }
+
 }
 
 @media (max-width: 1130px) {
@@ -508,4 +498,26 @@ footer a:not(.TitleCa) {
     flex-direction: column;
     height: auto;
   }
+
+    /* ===== Scrollbar CSS ===== */
+    /* Firefox */
+    .ContainerArticles {
+        scrollbar-width: auto;
+        scrollbar-color: #8f54a0 #ffffff;
+    }
+
+    /* Chrome, Edge, and Safari */
+    .ContainerArticles::-webkit-scrollbar {
+        width: 0;
+    }
+
+    .ContainerArticles::-webkit-scrollbar-track {
+        background: #ffffff;
+    }
+
+    .ContainerArticles::-webkit-scrollbar-thumb {
+        background-color: #8f54a0;
+        border-radius: 10px;
+        border: 14px solid #ffffff;
+    }
 }
