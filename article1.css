@@ -124,6 +124,10 @@ img{
     border-radius: 20px;
 }
 
+.TextMainArticle{
+    margin-left: 5%;
+}
+
 .TextMainArticle h1{
     font-size: 3rem;
     margin: 0;
@@ -135,7 +139,7 @@ img{
 
 }
 
-.TextMainArticle a{
+.TextMainArticle a, select{
     color: var(--third-color);
     background-color: var(--first-color);
     padding: 2% 5%;
@@ -143,3 +147,165 @@ img{
 }
 
 
+/* Footer */
+
+footer {
+    color: var(--third-color);
+    height: 50vh;
+    width: 94%;
+    margin-left: 3%;
+    border-radius: 20px;
+    background-color: var(--first-color);
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5vh;
+}
+
+footer a {
+    color: var(--third-color);
+    font-family: var(--First-font);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer a:not(.TitleCa) {
+    font-size: 20px;
+}
+
+.FooterSeparation {
+    height: 90%;
+    transform: translateY(5%);
+    width: 0.1%;
+    border: 1px solid var(--third-color);
+}
+
+/* Right Part */
+
+.FooterArticles {
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.FooterArticles div {
+    padding-right: 2%;
+}
+
+.FooterArticles div div {
+    margin-top: 5%;
+}
+
+.FooterArticles h2 {
+    margin-bottom: 20%;
+}
+
+.FooterContact {
+    display: grid;
+    text-align: center;
+    align-content: center;
+}
+
+
+@media (max-width:768px) {
+    .FooterArticles{
+        flex-direction: column;
+    }
+
+    footer {
+        height: 100vh;
+    }
+    .ContainerImgC{
+        display: block;
+    }
+
+    .ContainerImgC div:nth-child(2){
+        display: none;
+    }
+    .ContainerImgC img{
+        display: none;
+    }
+}
+
+@media (max-width: 1130px) {
+
+    footer {
+        flex-direction: column;
+        height: auto;
+    }
+    section{
+        height: 100%;
+        flex-direction:column;
+    }
+    .ContainerSmallImg{
+        order: 2;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .ContainerMainArticle{
+        order: 1;
+    }
+    .TextMainArticle{
+        order: 3;
+    }
+    h1{
+        text-align: center;
+    }
+    .TextMainArticle{
+        margin-top: 2%;
+    }
+
+    /* Burger phone */
+
+    .BugerMenuD {
+        display: none;
+    }
+
+    .burgerMenuPhone {
+        display: block;
+        height: fit-content;
+    }
+
+    .burgerMenuPhone a div {
+        height: 2px;
+        margin-top: 4px;
+        background-color: var(--third-color);
+    }
+
+    .burgerMenuPhone a{
+        height: 1px;
+    }
+
+    .BarOneMenuPhone{
+        width: 16px;
+    }
+
+    .BarTwoMenuPhone{
+        width: 10px;
+    }
+
+    .BarThreeMenuPhone{
+        width: 5px;
+    }
+    .ContainerBugerMenu {
+        height: 100%;
+        width: 10%;
+    }
+
+    nav ul {
+        justify-content: end;
+    }
+}
+
+@media (max-width: 768px) {
+    .hiddenTitle {
+        display: none;
+    }
+    nav {
+        padding-right: 15%;
+        width: 30%;
+    }
+}

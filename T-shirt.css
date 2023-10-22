@@ -58,7 +58,8 @@ nav ul li {
 li > a:not(.burgerMenuPhone a) {
     color: var(--third-color);
     font-family: var(--First-font);
-    padding: 8%;
+    padding: 10%;
+    white-space: nowrap;
 }
 
 li > a:hover:not(.burgerMenuPhone a) {
@@ -87,158 +88,20 @@ h3, h1 {
     color: var(--third-color);
 }
 
-/* section */
-
-.ContainerContact{
-    height: 90vh;
-    width: 90vw;
+.SecondNav{
+    height: 6vh;
     background-color: var(--first-color);
-    margin-left: 4.5vw;
-    border-radius:  20px
-}
-
-.ContainerImgC{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    height: 100%;
-}
-
-
-.ContainerImgC img{
-    transform: translate(30%, 5%);
-    width: 70%;
-    height: 90%;
-    border-radius:20px;
-}
-
-/* Design form */
-
-input{
-    width: 90%;
-    margin-left: 4%;
-    background-color: var(--first-color);
-    border: 0;
-    border-bottom: 1px solid var(--third-color);
-    margin-bottom: 7%;
-    color: var(--third-color);
-
-}
-
-input:focus{
-    outline: none;
-    border-bottom: 2px solid royalblue;
-}
-
-label{
-    color: var(--third-color);
-    margin-left: 5%;
-}
-
-.ContainerForm h1{
-    text-align: center;
-}
-
-form{
-    height: 85%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-textarea{
-    width: 90%;
-    height: 30vh;
-    margin-left: 4%;
-    background-color: var(--first-color);
-    border: 1px solid var(--third-color);
-    color: var(--third-color);
-}
-
-textarea:focus{
-    outline: none;
-    border: 2px solid royalblue;
-}
-
-.ContainerButton{
-    text-align: right;
-}
-
-button{
-    background-color: var(--third-color);
-    outline: none;
-    border: 1px solid var(--third-color);
-    padding: 1% 5%;
+    margin-left: 1%;
     border-radius: 20px;
-    margin-top: 1%;
-}
-
-button:hover{
-    background-color: var(--first-color);
-    border: 1px solid var(--third-color);
-    padding: 1% 5%;
-    color: var(--third-color);
-    border-radius: 20px;
-    margin-top: 1%;
-}
-
-/* Footer */
-
-footer {
-    color: var(--third-color);
-    height: 50vh;
-    width: 94%;
-    margin-left: 3%;
-    border-radius: 20px;
-    background-color: var(--first-color);
-    display: flex;
-    justify-content: space-around;
-    margin-top: 5vh;
-}
-
-footer a {
-    color: var(--third-color);
-    font-family: var(--First-font);
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-footer a:not(.TitleCa) {
-    font-size: 20px;
-}
-
-.FooterSeparation {
-    height: 90%;
-    transform: translateY(5%);
-    width: 0.1%;
-    border: 1px solid var(--third-color);
-}
-
-/* Right Part */
-
-.FooterArticles {
     display: flex;
     align-items: center;
-    margin-left: 5%;
+    width: 30%;
+    padding-right: 0;
 }
 
-.FooterArticles div {
-    padding-right: 2%;
-}
-
-.FooterArticles div div {
-    margin-top: 5%;
-}
-
-.FooterArticles h2 {
-    margin-bottom: 20%;
-}
-
-.FooterContact {
-    display: grid;
-    text-align: center;
-    align-content: center;
+.SecondNav ul {
+    padding-left: 0;
+    justify-content: space-around;
 }
 
 
@@ -275,6 +138,10 @@ footer a:not(.TitleCa) {
     .ContainerButton{
         margin-right: 5%;
     }
+    .SecondNav{
+        width: 80%;
+    }
+
 }
 
 
@@ -349,4 +216,3 @@ footer a:not(.TitleCa) {
         justify-content: end;
     }
 }
-
