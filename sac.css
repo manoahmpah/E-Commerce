@@ -88,6 +88,8 @@ h3, h1 {
     color: var(--third-color);
 }
 
+
+
 .SecondNav{
     height: 6vh;
     background-color: var(--first-color);
@@ -103,6 +105,152 @@ h3, h1 {
     padding-left: 0;
     justify-content: space-around;
 }
+
+.ContainerArticles {
+    display: flex;
+    justify-content: space-around;
+    color: var(--third-color);
+    font-family: var(--First-font);
+    overflow: auto;
+    flex-wrap: wrap;
+    margin-top: 1%;
+}
+
+.ComponentArticle {
+    border-radius: 20px;
+    flex: 0 0 auto;
+    margin-bottom: 1%;
+
+}
+
+.ComponentArticle img {
+    width: 100%;
+    height: 45vh;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+.FlexInfoActicle {
+    display: flex;
+    align-items: center;
+    margin-top: 2%;
+    white-space: nowrap;
+    justify-content: space-around;
+}
+
+.FlexInfoActicle a, h4 {
+    padding: 25%;
+    border-radius: 20px;
+    color: var(--first-color);
+    background-color: var(--third-color);
+}
+
+h4{
+    padding: 15%;
+    width: 100%;
+    transform: translateX(-20%);
+}
+
+.FlexInfoActicle p {
+    margin-top: 0;
+}
+
+.FlexInfoActicle h3 {
+    margin-bottom: 0;
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+/* Couleurs des articles */
+.ArticleOne {
+    background-color: black;
+}
+
+.ArticleTwo {
+    background-color: #8a3c48;
+}
+
+.ArticleThree {
+    background-color: #4D5456;
+}
+
+
+.ArticleFive {
+    background-color: #6e533f;
+}
+
+.ArticleFour{
+    background-color: #2b211d;
+}
+
+.ArticleSix {
+    background-color: #7d3505;
+}
+
+.ArticleSeven{
+    background-color: #fda437;
+}
+
+/* Footer */
+
+footer {
+    color: var(--third-color);
+    height: 50vh;
+    width: 94%;
+    margin-left: 3%;
+    border-radius: 20px;
+    background-color: var(--first-color);
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5vh;
+}
+
+footer a {
+    color: var(--third-color);
+    font-family: var(--First-font);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer a:not(.TitleCa) {
+    font-size: 20px;
+}
+
+.FooterSeparation {
+    height: 90%;
+    transform: translateY(5%);
+    width: 0.1%;
+    border: 1px solid var(--third-color);
+}
+
+/* Right Part */
+
+.FooterArticles {
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.FooterArticles div {
+    padding-right: 2%;
+}
+
+.FooterArticles div div {
+    margin-top: 5%;
+}
+
+.FooterArticles h2 {
+    margin-bottom: 20%;
+}
+
+.FooterContact {
+    display: grid;
+    text-align: center;
+    align-content: center;
+}
+
 
 @media (max-width:768px) {
     .FooterArticles{
